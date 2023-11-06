@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Sunnyside</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-bg relative">
+    <div class="w-limit flex justify-between z-10 py-12 relative">
+      <img src="./img/logo.svg" alt=""
+      class="w-24 h-5 sm:w-40 sm:h-8 ">
+     <img src="./img/icon-hamburger.svg" alt=""
+      class="lg:hidden w-6 h-4 sm:w-8 sm:h-5 menu-pos-mobile" id="menu-btn">
+      <div class="top-right-triangle" id="menu">
+        <ul class="menu-tab-mobile">
+          <li class="barlow-btn-nav"><a href="">About</a> </li>
+          <li class="barlow-btn-nav"><a href="">Services</a></li>
+          <li class="barlow-btn-nav"><a href="">Projects</a></li>
+          <li class="contact-btn"><a href="" >Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero">
+      <h1 class="tracking-wider">We are creatives</h1>
+      <img src="./img/icon-arrow-down.svg" alt=""
+      class="icon-arrow-down">
+    </div>
+  </header>
+  
+  <!-- Main -->
+  <main class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="bg-white text-block-main order-2 lg:order-none">
+      <h2 class="Fraunces text-center lg:text-left text-2xl lg:text-xl xl:text-4xl pb-5" style="color: hsl(212, 27%, 19%)">Transform your<br>brand</h2>
+      <p class="Barlow text-center lg:text-left lg:text-xs xl:text-sm">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <div class="text-center lg:text-left">
+        <button class="lm-btn-1"><a href="">Learn more</a></button>
+      </div>
+      
+    </div>
+
+    <div class="order-1 lg:order-none">
+      <img src="./img/desktop/image-transform.jpg" alt=""
+      class="w-full">
+    </div>
+
+    <div class="order-3 lg:order-none">
+      <img src="./img/desktop/image-stand-out.jpg" alt=""
+      class="w-full">
+    </div>
+
+    <div class="bg-white text-block-main order-4 lg:order-none">
+      <h2 class="Fraunces text-center lg:text-left text-2xl lg:text-xl xl:text-4xl pb-5" style="color: hsl(212, 27%, 19%)">Stand out to the right<br>audience</h2>
+      <p class="Barlow text-center lg:text-left lg:text-xs xl:text-sm">Using a collaborative formula of designers, researchers, photographers, videographers, 
+        and copywriters, we’ll build and extend your brand in digital places.</p>
+        <div class="text-center lg:text-left">
+          <button class="lm-btn-2"><a href="">Learn more</a></button>
+        </div>
+    </div>
+
+    <div class="order-5 lg:order-none">
+      <div class="relative">
+        <div>
+          <div class="absolute m-auto w-full" style="bottom: 15%;">
+            <h2 class="btm-main-h2-l">Graphic design</h2>
+            <p class="btm-main-p-l">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+          <img src="./img/desktop/image-graphic-design.jpg" alt=""
+          class="w-full hidden lg:block">
+          <img src="./img/mobile/image-graphic-design.jpg" alt=""
+          class="w-full block lg:hidden">
+        </div>
+      </div>
+    </div>
+
+    <div class="order-6 lg:order-none">
+       <div class="relative">
+        <div>
+          <div class="absolute m-auto w-full" style="bottom: 15%;">
+            <h2 class="btm-main-h2-r">Photography</h2>
+            <p class="btm-main-p-r">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+            <img src="./img/desktop/image-photography.jpg" alt=""
+            class="w-full hidden lg:block">
+            <img src="./img/mobile/image-photography.jpg" alt=""
+            class="w-full block lg:hidden">
+        </div>      
+      </div>
+    </div>
+  </main>
+  
+  <!-- testimonials -->
+  <section>
+    <h2 class="Fraunces text-xl text-center mt-40 mb-20" style="color:hsl(210, 4%, 67%); letter-spacing:0.3em;">CLIENT TESTIMONIALS</h2>
+    <div class="flex flex-col lg:flex-row items-center lg:justify-evenly w-limit ">
+      <div class="testimonials">
+        <img src="./img/image-emily.jpg" alt="">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h3>Emily R.</h3>
+        <p>Marketing Director</p>
+      </div>
+      <div class="testimonials">
+        <img src="./img/image-thomas.jpg" alt="">
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <h3>Thomas S.</h3>
+        <p>Chief Operating Officer</p>
+      </div>
+      <div class="testimonials">
+        <img src="./img/image-jennie.jpg" alt="">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h3>Jennie F.</h3>
+        <p>Business Owner</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Small Gallery -->
+  <section>
+    <div class="grid grid-cols-2 lg:grid-cols-4">
+      <!-- tablet/mobile view -->
+      <img src="./img/mobile/image-gallery-milkbottles.jpg" alt=""
+      class="w-full inline lg:hidden">
+      <img src="./img/mobile/image-gallery-orange.jpg" alt=""
+      class="w-full inline lg:hidden">
+      <img src="./img/mobile/image-gallery-sugar-cubes.jpg" alt=""
+      class="w-full inline lg:hidden">
+      <img src="./img/mobile/image-gallery-cone.jpg" alt=""
+      class="w-full inline lg:hidden">
+      <!-- desktop view -->
+      <img src="./img/desktop/image-gallery-milkbottles.jpg" alt=""
+      class="hidden lg:inline">
+      <img src="./img/desktop/image-gallery-orange.jpg" alt=""
+      class="hidden lg:inline">
+      <img src="./img/desktop/image-gallery-sugarcubes.jpg" alt=""
+      class="hidden lg:inline">
+      <img src="./img/desktop/image-gallery-cone.jpg" alt=""
+      class="hidden lg:inline">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section style="background-color: hsl(168, 34%, 65%);" class="pt-16">
+    <img src="./img/logo.svg" alt="" class="w-40 h-8 mx-auto">
+    <div class="text-center mt-8 mb-6 lg:mb-0">
+      <a href="" class="px-3 lg:px-6 hover-white">About</a>
+      <a href="" class="px-3 lg:px-6 hover-white">Services</a>
+      <a href="" class="px-3 lg:px-6 hover-white">Projects</a>
+    </div>
+    <div class="flex mx-auto justify-center pt-10">
+      <a href="" class="px-2 mx-1 hover-white"><img src="./img/icon-facebook.svg" alt=""></a>
+      <a href="" class="px-2 mx-1 hover-white"><img src="./img/icon-instagram.svg" alt=""></a>
+      <a href="" class="px-2 mx-1 hover-white"><img src="./img/icon-twitter.svg" alt=""></a>
+      <a href="" class="px-2 mx-1 hover-white"><img src="./img/icon-pinterest.svg" alt=""></a>
+    </div>
+    <div class="attribution mt-12">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">KooYoung</a>.
+  </div>
+  </section>
+
+  <!-- Menu Script -->
+  <script>
+    var menuBtn = document.getElementById("menu-btn");
+    var menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", ()=>{
+        menu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
